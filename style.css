@@ -314,6 +314,7 @@ section.active {
 }
 
 h2 {
+    color: var(--ensibs-green);
     font-size: 2rem;
     text-align: center;
 }
