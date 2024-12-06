@@ -134,5 +134,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+
+    // Sélectionner les éléments nécessaires
+const images = document.querySelectorAll('.clickable');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+// Ajouter un événement de clic sur chaque image
+images.forEach(image => {
+    image.addEventListener('click', () => {
+        lightbox.classList.add('active');
+        lightboxImg.src = image.src; // Utiliser la source de l'image cliquée
+    });
+});
+
+// Fermer le lightbox en cliquant à l'extérieur de l'image
+lightbox.addEventListener('click', (e) => {
+    if (e.target !== lightboxImg) {
+        lightbox.classList.remove('active');
+    }
+});
+
     
 });
