@@ -460,7 +460,7 @@ h2 {
     display: flex; /* Affiche le lightbox */
 }
 
-/* Animation d'apparition */
+/* Animation d'apparition */ 
 @keyframes fadeIn {
     from {
         opacity: 0;
